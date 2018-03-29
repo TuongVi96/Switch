@@ -1,0 +1,59 @@
+// module 'Works'
+.mod-works {
+    background-color: $blue;
+    padding: 45px 0;
+    text-align: center;
+    .works-head{
+        text-align: center;
+        color: #207b20;
+        h2{
+            &::after{
+                content: "";
+                display: block;
+                width: 40px;
+                height: 2px;
+                background-color: #207b20;
+                margin: 0 auto;
+                margin-top: 10px;
+            }
+        }
+    }
+    .works-tab{
+        margin: 0 auto;
+        width: 280px;
+        border-radius: 30px;
+        background-color: #207b20;
+        li{
+            margin-bottom: 0;
+            list-style: none;
+            display: inline-block;
+        }
+        a{
+            text-decoration: none;
+            color: $white;
+        }
+    }
+    .works-images{
+        position: relative;
+        padding: 55px 0;
+        button{
+            position: absolute;
+            left: 0;
+            right: 0;
+            border: none;
+            background-color: #207b20;
+            border-radius: 30px;
+            color: $white;
+            padding: 5px 10px;
+        }
+        .images{
+            @extend .row;
+            img{
+            @extend .col-lg-2;
+            @extend .col-sm-4;
+            @extend .col-12;
+            margin: 0 15px 30px 15px;
+            }
+        }
+    }
+}

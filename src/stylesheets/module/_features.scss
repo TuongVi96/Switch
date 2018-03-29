@@ -1,0 +1,61 @@
+// module 'Features'
+.mod-features {
+    padding: 45px 0;
+    .features-head{
+        text-align: center;
+        color: #b7b3b3;
+        h2{
+            &::after{
+                content: "";
+                display: block;
+                width: 40px;
+                height: 2px;
+                background-color: $gray-900;
+                margin: 0 auto;
+                margin-top: 10px;
+            }
+        }
+    }
+    .features-group{
+        @extend .row;
+        padding: 70px 0;
+        .features-item{
+            @extend .col-lg-4;
+            @extend .col-sm-6;
+            @extend .col-12;
+            text-align: center;
+            padding: 0 80px;
+            div{
+                margin: 0 auto;
+                width: 144px;
+                height: 144px;
+                background-color: #e1f3e1;
+                border-radius: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            h3{
+                font-weight: 700;
+                padding: 30px 0 20px 0;
+                margin: unset;
+            }
+            p{
+                font-weight: 300;
+            }
+            button{
+                color: $white;
+                border: none;
+                background-color: $blue;
+                border-radius: 30px;
+                padding: 3px 15px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+@media screen and (max-width: 992px){
+    .mod-features .features-group .features-item{
+        padding-bottom: 50px;
+    }
+}

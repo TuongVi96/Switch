@@ -1,0 +1,32 @@
+// module 'Banner'
+.mod-banner {
+    background: url("/images/banner.jpg") top center no-repeat;
+    background-size: cover;
+    padding: 340px 0;
+    text-align: center;
+    position: relative;
+    h1{
+        color: $white;
+        font-weight: 700;
+    }
+    button{
+        color: $white;
+        font-weight: 300;
+        background-color: $blue;
+        border:none;
+        border-radius: 30px;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+    p{
+        color: black;
+        width: 120px;
+        height: 30px;
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 30px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
