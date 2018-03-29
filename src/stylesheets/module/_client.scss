@@ -1,0 +1,38 @@
+// module 'Client'
+.mod-client {
+    padding: 30px 0;
+    text-align: center;
+    color: #f2f1f1;
+    .client-head{
+        text-align: center;
+        color: #b7b3b3;
+        h2{
+            &::after{
+                content: "";
+                display: block;
+                width: 40px;
+                height: 2px;
+                background-color: $gray-900;
+                margin: 0 auto;
+                margin-top: 10px;
+            }
+        }
+    }
+    .client-logo{
+        @extend .row;
+        img{
+            @extend .col-lg-3;
+            @extend .col-sm-6;
+            @extend .col-12;
+        }
+    }
+    .link{
+        position: absolute;
+        left: 40%;
+        border: none;
+        background-color: #dddcdc;
+        border-radius: 30px;
+        color: $white;
+        padding: 5px 25px;
+    }
+}

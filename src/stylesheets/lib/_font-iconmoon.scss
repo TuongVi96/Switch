@@ -1,16 +1,15 @@
 // stylelint-disable
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?5ba3wr');
-  src:  url('../fonts/icomoon.eot?5ba3wr#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?5ba3wr') format('truetype'),
-    url('../fonts/icomoon.woff?5ba3wr') format('woff'),
-    url('../fonts/icomoon.svg?5ba3wr#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?w3fs6c');
+  src:  url('../fonts/icomoon.eot?w3fs6c#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?w3fs6c') format('truetype'),
+    url('../fonts/icomoon.woff?w3fs6c') format('woff'),
+    url('../fonts/icomoon.svg?w3fs6c#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
-
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"], [class*=" icon-"], .iconmoon {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: none;
@@ -24,7 +23,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 .icon-mail-envelope-closed2::before {
   content: "\e902";
 }
@@ -151,12 +149,27 @@
 .icon-file-pdf::before {
   content: "\eae0";
 }
+.icon-behance:before {
+  content: "\e903";
+  color: #1769ff;
+}
+.icon-dribbble:before {
+  content: "\e904";
+  color: #ea4c89;
+}
+.icon-twitter:before {
+  content: "\e905";
+  color: #1da1f2;
+}
+.icon-keyboard_arrow_right:before {
+  content: "\e902";
+}
+.icon-arrow-right:before {
+  content: "\e901";
+}
 .icon-search:before {
   content: "\e986";
 }
 .icon-arrow-down:before {
   content: "\e900";
-}
-.icon-arrow-right:before {
-  content: "\e901";
 }
