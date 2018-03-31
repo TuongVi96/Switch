@@ -76,6 +76,7 @@
             input {
               width: 40px;
               background-color: transparent;
+              color: transparent;
               transition: .25s all ease-out;
               &::placeholder {
                 color: transparent !important;
@@ -91,6 +92,7 @@
               &:focus {
                 width: 180px;
                 background-color: $white;
+                color: initial;
                 & + .button-search {
                   z-index: 1;
                   background-color: transparent;
