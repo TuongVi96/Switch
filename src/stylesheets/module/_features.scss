@@ -19,10 +19,11 @@
     .features-group{
         @extend .row;
         padding: 70px 0;
+        justify-content: center;
         .features-item{
             @extend .col-lg-4;
-            @extend .col-sm-6;
-            @extend .col-12;
+            @extend .col-md-6;
+            // @extend .col-sm-12;
             text-align: center;
             padding: 0 80px;
             .img{
@@ -42,6 +43,7 @@
             }
             p{
                 font-weight: 300;
+                cursor: pointer;
             }
             .link{
                 font-weight: 500;
@@ -51,6 +53,11 @@
                 border-radius: 30px;
                 padding: 7px 20px;
                 cursor: pointer;
+                white-space: nowrap;
+                transition: .25s;
+                &:hover{
+                    background-color: #2b9b2b;
+                }
             }
         }
     }

@@ -1,7 +1,7 @@
 import $ from 'jquery'
 
-const Testimonials = (($) => {
-  const NAME = 'testimonials'
+const Banner = (($) => {
+  const NAME = 'banner'
   const DATA_KEY = `bs.${NAME}`
   const EVENT_KEY = `.${DATA_KEY}`
   const DATA_API_KEY = '.data-api'
@@ -17,19 +17,24 @@ const Testimonials = (($) => {
     DATA_MODULE: `[data-module="${NAME}"]`
   }
 
-  class Testimonials {
+  class Banner {
     constructor (element, config) {
       this._element = $(element)
       this._config = this._getConfig(config)
       this._addEventListener()
-      this.singleItem()
+      this.scrolldown()
     }
     // public api
     static get Default () {
       return Default
     }
-    singleItem(){
-      $('.testimonials-slider').slick()
+    scrolldown(){
+      $("#scrolldown").click(function(){
+        console.log("lkbaBLDA")
+        $("html, body").animate({
+          scrollTop: $(".mod-banner").outerHeight()
+        },200)
+      })
     }
     // private api
     _addEventListener () {
@@ -50,7 +55,7 @@ const Testimonials = (($) => {
         )
         let data = $element.data(DATA_KEY)
         if (!data) {
-          data = new Testimonials(this, _config)
+          data = new Banner(this, _config)
           $element.data(DATA_KEY, data)
         }
       })
@@ -61,16 +66,16 @@ const Testimonials = (($) => {
    * Data Api implement
    */
   $(window).on(Event.LOAD_DATA_API, () => {
-    Testimonials._jQueryInterface.call($(Selector.DATA_MODULE))
+    Banner._jQueryInterface.call($(Selector.DATA_MODULE))
   })
 
   /**
    * jQuery
    */
-  $.fn[NAME] = Testimonials._jQueryInterface
-  $.fn[NAME].Constructor = Testimonials
+  $.fn[NAME] = Banner._jQueryInterface
+  $.fn[NAME].Constructor = Banner
 
-  return Testimonials
+  return Banner
 })($)
 
-export default Testimonials
+export default Banner

@@ -9,3 +9,5 @@ import 'modules/Header'
 import 'modules/FixHeight'
 import 'modules/Menu'
 import 'modules/Testimonials'
+import 'modules/Banner'
+
