@@ -59,6 +59,8 @@
         }
     }    
 // }
+// chổ này có thể thay bằng
+// @include media-breakpoint-down(md) {
 @media screen and (max-width:768px){
     .navbar{
         padding: 0;
@@ -71,6 +73,31 @@
             position: fixed;
             top: 0;
             right: 0;
+            input {
+              width: 40px;
+              background-color: transparent;
+              transition: .25s all ease-out;
+              &::placeholder {
+                color: transparent !important;
+              }
+              & + .button-search {
+                z-index: -1;
+                background-color: $white;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                transition: .5s all;
+              }
+              &:focus {
+                width: 180px;
+                background-color: $white;
+                & + .button-search {
+                  z-index: 1;
+                  background-color: transparent;
+                  border-radius: 50%;
+                }
+              }
+            }
         }
     }
     ul{
