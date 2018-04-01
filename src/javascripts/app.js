@@ -1,3 +1,4 @@
+import 'bootstrap/js/dist/tab'
 import 'slick-carousel/slick/slick'
 import 'bootstrap/js/dist/util'
 import 'bootstrap/js/dist/dropdown'

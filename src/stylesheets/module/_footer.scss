@@ -24,9 +24,6 @@
         }
         .about-us{
           color: #cccccc;
-            .section-description{
-                
-            }
             .team-icons{
                 margin: 0 auto;
                 width: 100px;
@@ -41,8 +38,69 @@
         }
         .recent-posts{
             .article{
-
+                text-align: left;
+                line-height: 2;
+                img{
+                    width: 53px;
+                    height: 53px;
+                    // padding-bottom: 10px;
+                }
             }
+            img, .text{
+                display: inline-block;
+                vertical-align: middle;
+                p{
+                    margin: 0;
+                }
+            }
+        }
+        .recent-posts-link{
+            border-radius: 4px;
+            padding: 0 8px;
+        }
+        .magazine{
+            background-color: $blue;
+        }
+        .ui-design{
+            background-color: #ffba00;
+        }
+        .photography-link{
+            background-color: #089dea;
+        }
+        .book{
+            background-color: #f34d04;
+        }
+    }
+    .contacts{
+        color: #cccccc;
+        ul{
+            padding: 0;
+            list-style: none;
+        }
+    }
+    .form{
+        max-width: 320px; 
+        margin: 0 auto;
+        input, textarea{
+            width: 100%;
+            border: none ;
+            background-color: #444444;
+            display: block;
+            margin-bottom: 2px;
+        }
+        .submit{
+            background-color: #2b9b2b;
+            color: $white;
+            &:hover{
+                background-color: #dddcdc;
+                color: $black;
+                font-weight: 500;
+            }
+        }
+        
+        ::placeholder {
+            color: #777777;
+            opacity: 1;
         }
     }
 }
