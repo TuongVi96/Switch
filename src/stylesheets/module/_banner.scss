@@ -1,56 +1,56 @@
 // module 'Banner'
 .mod-banner {
-    background: url("/images/banner.jpg") top center no-repeat;
-    background-size: cover;
-    padding: 20px 0;
-    text-align: center;
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    h1{
-        color: $white;
-        font-weight: 700;
-        letter-spacing: -1px;
-        margin-bottom: 41px;
+  background: url("/images/banner.jpg") top center no-repeat;
+  background-size: cover;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  h1 {
+    color: $white;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 41px;
+  }
+  .link {
+    color: $white;
+    font-weight: 300;
+    background-color: $blue;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: .25s;
+    &:hover {
+      background-color: #2b9b2b;
     }
-    .link{
-        color: $white;
-        font-weight: 300;
-        background-color: $blue;
-        border:none;
-        border-radius: 30px;
-        padding: 10px 20px;
-        cursor: pointer;
-        transition: .25s;
-        &:hover{
-            background-color: #2b9b2b;
-        }
-    }
-    p{
-        color: black;
-        width: 120px;
-        height: 30px;
-        background-color: rgba(255, 255, 255, 0.7);
-        border-radius: 30px;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        animation-name: scrolldown;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        cursor: pointer;
-    }
+  }
+  p {
+    color: $black;
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 30px;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-name: scrolldown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+  }
 }
+
 @keyframes scrolldown {
-    0%   {
-        transform: translateY(0) translateX(-50%);
-    }
-    50%  {
-        transform: translateY(-10px) translateX(-50%);
-    }
-    100% {
-        transform: translateY(0) translateX(-50%);
-    }
+  0% {
+    transform: translateY(0) translateX(-50%);
+  }
+  50% {
+    transform: translateY(-10px) translateX(-50%);
+  }
+  100% {
+    transform: translateY(0) translateX(-50%);
+  }
 }

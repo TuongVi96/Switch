@@ -20,8 +20,8 @@
     }
     .works-tab{
         margin-top: 60px;
-        .nav{
-            max-width: 320px;
+        .nav-pills{
+            justify-content: center;
             margin: 0 auto;
             list-style: none;
             &::after{
@@ -30,7 +30,22 @@
                 display: block;
             }
         }
-        .nav-item{
+        .nav-item {
+            &:first-child, {
+                .nav-link{
+                    border-top-left-radius: 30px;
+                    border-bottom-left-radius: 30px;
+                }
+            }
+            &:last-child{
+                .nav-link{
+                    border-top-right-radius: 30px;
+                    border-bottom-right-radius: 30px;
+                    border-right-width:1px;
+                }
+            }
+        }
+        .nav-link{
             margin-bottom: 0;
             list-style: none;
             background-color: $white;
@@ -39,26 +54,14 @@
             border-right-width: 0;
             transition: .25s all;
             padding: 5px 14px;
-            &:first-child, {
-                border-top-left-radius: 30px;
-                border-bottom-left-radius: 30px;
-            }
-            &:last-child{
-                border-top-right-radius: 30px;
-                border-bottom-right-radius: 30px;
-                border-right-width:1px;
-            }
-            &.is-active, &:hover{
-                background-color: #207b20;
-                .nav-link{
-                    color: $white;
-                }
-            }
-        }
-        .nav-link{
             text-decoration: none;
             color: #2b9b2b;
             font-weight: 500;
+            background-color: $white;
+            &.active, &:hover{
+                background-color: #207b20;
+                color: $white;
+            }
         }
         .works-images{
             padding: 55px 0;
@@ -78,6 +81,7 @@
                 width: 100%;
             }
         }
+        
     }
     
     .link{
@@ -97,5 +101,10 @@
     .col-lg-20 {
       flex: 0 0 20%;
       max-width: 20%;
+    }
+}
+@media screen and (max-width: 767px){
+    .mod-works .works-tab .works-images{
+        // padding: 0;
     }
 }

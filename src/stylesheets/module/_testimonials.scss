@@ -54,7 +54,21 @@
         }
     }
     .slick-prev{
-        transform: rotate(180deg);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%) rotate(180deg);
+    }
+    .slick-next{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+}
+@media screen and (max-width: 767px){
+    p{
+        padding: 0 30px;
     }
 }
 

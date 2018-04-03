@@ -1,4 +1,4 @@
 module.exports = {
-  'title': 'Frontend starter template',
+  'title': 'Switch',
   banner: require('./modules/banner1')
 }

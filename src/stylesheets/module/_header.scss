@@ -14,7 +14,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        z-index: -1;
+        z-index: -2;
     }
     .navbar{
         font-size: 16px;
@@ -24,7 +24,7 @@
             display: inline;
             li{
                 display: inline-block;
-                margin-right: 20px;
+                margin-right: 1vw;
                 margin-bottom: 0;
                 border-top: 5px solid transparent;
                 &:hover{
@@ -32,6 +32,12 @@
                     font-weight: 700;
                 }
             }
+        }
+        .navbar-brand{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
         }
         form{
             color: black;
@@ -59,13 +65,37 @@
         }
     } 
 } 
-@media screen and (max-width:768px){
+
+@include media-breakpoint-down(lg) {
+    .mod-header{
+        .navbar-toggler {
+            border-color: transparent;
+            &::after{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: -1;
+                background-color: #828181;
+                opacity: 0;
+                transition: .25s all;
+            }
+            &[aria-expanded="true"]{
+                &::after{
+                    opacity: 1;
+                }
+            }
+        }
     .navbar{
         padding: 0;
-        .navbar-brand{
-            position: fixed;
-            top: 0;
-            left: 40%;
+        ul{
+            li{
+                &:hover{
+                    border-top-color: transparent;
+                }
+            }
         }
         form{
             position: fixed;
@@ -99,13 +129,15 @@
               }
             }
         }
-        ul{
-            background-color: #828181;
+        .navbar-nav{
+            display: block;
+            
         }
-        li{
+        .nav-item{
             display: block;
             width: 100%;
             padding: 5px;
         }
     }
+}
 }

@@ -6,7 +6,7 @@
         @extend .row;
         .footer-wrap{
             @extend .col-lg-4;
-            @extend .col-sm-6;
+            @extend .col-md-6;
             @extend .col-12;
         }
         .footer-title{
@@ -31,24 +31,28 @@
                 border-radius: 30px;
                 background-color: #e6e7e6;
                 padding: 4px 10px;
-                span{
+                .icon{
                     padding: 0 4px;
                 }
             }
         }
         .recent-posts{
+            article{
+                text-align: center;
+                margin-bottom: 10px;
+            }
             .article{
                 text-align: left;
                 line-height: 2;
                 img{
                     width: 53px;
                     height: 53px;
-                    // padding-bottom: 10px;
                 }
             }
             img, .text{
                 display: inline-block;
                 vertical-align: middle;
+                text-align: left;
                 p{
                     margin: 0;
                 }
@@ -97,10 +101,14 @@
                 font-weight: 500;
             }
         }
-        
         ::placeholder {
             color: #777777;
             opacity: 1;
         }
+    }
+}
+@media screen and (max-width: 992px){
+    .footer-wrap{
+        padding-bottom: 50px;
     }
 }

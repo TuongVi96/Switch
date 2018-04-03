@@ -56,7 +56,6 @@
                 left: 50%;
                 transform: translateX(-50%), translateY(-50%);
             }
-            
         }
         .team-icons{
             margin: 0 auto;
@@ -94,4 +93,19 @@
       flex: 0 0 20%;
       max-width: 20%;
     }
+}
+@media screen and (max-width: 992px){
+    .mod-team{
+        .team-images{
+            .images{
+                padding-bottom: 50px;
+                .image{
+                    margin-bottom: 0;
+                    &::after{
+                        content: unset;
+                    }
+                }
+            }
+        }
+    } 
 }
