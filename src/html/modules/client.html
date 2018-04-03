@@ -1,10 +1,10 @@
 <!-- module 'Client' -->
 <div class="mod-client">
     <div class="container">
-        <div class="client-head">
-            <h2>OUR HAPPY CLIENT</h2>
-            <p>Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p>
-        </div>
+        {% set content_head_class = "client-head" %}
+        {% set content_head_h2 = "OUR HAPPY CLIENT" %}
+        {% set content_head_p = "Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet." %}
+        {% include "modules/content-head.html" %}
         <div class="client-logo">
             <div class="link-logo">
                 <a href="#" title="logo google">
@@ -47,7 +47,7 @@
                 </a>
             </div>
         </div>
-        <a href="" class="link">See all client
+        <a href="" class="btn-link btn-link--team">See all client
             <span class="icon-arrow-right"></span>
         </a>
     </div>

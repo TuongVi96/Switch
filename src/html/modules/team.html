@@ -1,13 +1,13 @@
 <!-- module 'Team' -->
 <div class="mod-team">
     <div class="container">
-        <div class="team-head">
-            <h2>MEET THE TEAM</h2>
-            <p>Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p>
-        </div>
+        {% set content_head_class = "team-head" %}
+        {% set content_head_h2 = "MEET THE TEAM" %}
+        {% set content_head_p = "Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet." %}
+        {% include "modules/content-head.html" %}
         <div class="team-images">
             <div class="images">
-                <div class="image" style="background-image: url(images/team-img1.jpg)">
+                <div class="image" style="background-image: url(images/team-img1.jpg);">
                 </div>
                 <p>Krisna Wijaya</p>
                 <div class="team-icons">
@@ -89,7 +89,7 @@
         </div>
     </div>
     <div class="team-footer">
-        <a href="#" class="link" title="Work with us">WORK WITH US
+        <a href="#" class="btn-link" title="Work with us">WORK WITH US
         </a>
     </div>
 </div>

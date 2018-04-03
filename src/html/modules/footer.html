@@ -1,7 +1,9 @@
 <footer class="footer">
   <div class="footer-flex">
     <div class="footer-wrap about-us">
-      <h2 class="footer-title">ABOUT US</h2>
+      {% set content_head_class = "footer-title" %}
+      {% set content_head_h2 = "ABOUT US" %}
+      {% include "modules/content-head.html" %}
       <p class="section-description">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
         quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
         cursus a sit amet mauris. Morbi accumsan ipsum velit. Ut aliquam massa nisl quis neque. Suspendisse in orci enim.Aenean
@@ -20,7 +22,9 @@
       </div>
     </div>
     <div class="footer-wrap recent-posts">
-      <h2 class="footer-title">RECENT POSTS</h2>
+      {% set content_head_class = "footer-title" %}
+      {% set content_head_h2 = "RECENT POSTS" %}
+      {% include "modules/content-head.html" %}
       <section class="article">
         <article>
           <img src="images/work-img6.jpg" alt="magazine">
@@ -60,7 +64,9 @@
       </section>
     </div>
     <div id="contact-us" class="footer-wrap contacts">
-      <h2 class="footer-title">CONTACT US</h2>
+      {% set content_head_class = "footer-title" %}
+      {% set content_head_h2 = "CONTACT US" %}
+      {% include "modules/content-head.html" %}
       <ul>
         <li>10044 West 23th Street, Suite 721</li>
         <li>New York NY 10010</li>

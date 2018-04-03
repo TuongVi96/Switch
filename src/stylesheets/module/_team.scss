@@ -1,111 +1,94 @@
 // module 'Team'
 .mod-team {
-    text-align: center;
-    background-color: $blue;
-    .container{
-        padding: 40px 0;
-    }
-    .team-head{
-        text-align: center;
-        color: #207b20;
-        h2{
-            &::after{
-                content: "";
-                display: block;
-                width: 40px;
-                height: 2px;
-                background-color: #207b20;
-                margin: 0 auto;
-                margin-top: 10px;
-            }
-        }
-    }
-    .team-images{
-        width: 100%;
-        @extend .row;
-        display: inline-flex;
-        justify-content: center;
-        .images{
-            @extend .col-lg-20;
-            @extend .col-sm-6;
-            @extend .col-12;
-            margin: 0 auto;
-            p{
-                color: $white;
-            }
-        }
-        .image{
-            width: 130px;
-            height: 130px;
-            border-radius: 50%;
-            background-color: white;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: top center;
-            position: relative;
-            margin: 0 auto;
-            margin-bottom: 97px;            
-            &::after{
-                content: "";
-                display: block;
-                width: 2px;
-                height: 77px;
-                background-color: #207b20;
-                position: absolute;
-                top: calc(100% + 10px);
-                left: 50%;
-                transform: translateX(-50%), translateY(-50%);
-            }
-        }
-        .team-icons{
-            margin: 0 auto;
-            width: 100px;
-            height: 30px;
-            border-radius: 30px;
-            background-color: #e6e7e6;
-            padding: 4px 10px;
-            span{
-                padding: 0 4px;
-            }
-        }
-    }
-    .team-footer{
-        padding: 30px 0;
-        background-color: #3eba3e;
-        text-align: center;
-        .link{
-            background-color: $blue;
-            border-radius: 30px;
-            color: $white;
-            padding: 10px 20px;
-            font-weight: 500;
-            transition: .25s;
-            &:hover{
-                background-color: #dddcdc;
-                color: $black;
-            }
-        }
-    }
-    
+  text-align: center;
+  background-color: $blue;
+  .container {
+    padding: 40px 10px;
+  }
 }
+
+.team-head {
+  color: #207b20;
+  h2 {
+    &::after {
+      background-color: #207b20;
+    }
+  }
+}
+
+.team-images {
+  width: 100%;
+  @extend .row;
+  display: inline-flex;
+  justify-content: center;
+  .images {
+    @extend .col-lg-20;
+    @extend .col-sm-6;
+    @extend .col-12;
+    margin: 0 auto;
+    p {
+      color: $white;
+    }
+  }
+  .image {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: $white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 97px;
+    &::after {
+      content: "";
+      display: block;
+      width: 2px;
+      height: 77px;
+      background-color: #207b20;
+      position: absolute;
+      top: calc(100% + 10px);
+      left: 50%;
+      transform: translateX(-50%), translateY(-50%);
+    }
+  }
+  .team-icons {
+    margin: 0 auto;
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #e6e7e6;
+    padding: 4px 10px;
+    span {
+      padding: 0 4px;
+    }
+  }
+}
+
+.team-footer {
+  padding: 30px 0;
+  background-color: #3eba3e;
+  text-align: center;
+}
+
 @include media-breakpoint-up(lg) {
-    .col-lg-20 {
-      flex: 0 0 20%;
-      max-width: 20%;
-    }
+  .col-lg-20 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
 }
-@media screen and (max-width: 992px){
-    .mod-team{
-        .team-images{
-            .images{
-                padding-bottom: 50px;
-                .image{
-                    margin-bottom: 0;
-                    &::after{
-                        content: unset;
-                    }
-                }
-            }
+
+@media screen and (max-width: 992px) {
+  .team-images {
+    .images {
+      padding-bottom: 50px;
+      .image {
+        margin-bottom: 0;
+        &::after {
+          content: unset;
         }
-    } 
+      }
+    }
+  }
 }

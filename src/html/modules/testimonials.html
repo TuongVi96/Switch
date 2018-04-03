@@ -1,10 +1,10 @@
 <!-- module 'Testimonials' -->
 <div class="mod-testimonials">
     <div class="container">
-        <div class="testimonials-head">
-            <h2>TESTIMONIALS</h2>
-            <p>Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p>
-        </div>
+        {% set content_head_class = "testimonials-head" %}
+        {% set content_head_h2 = "TESTIMONIALS" %}
+        {% set content_head_p = "Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet." %}
+        {% include "modules/content-head.html" %}
         <div class="testimonials-slider" data-module="testimonials">
             <div class="testimonials-text">
                 <p>

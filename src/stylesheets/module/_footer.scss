@@ -1,114 +1,113 @@
-.footer{
-    background-color: #333333;
-    text-align: center;
-    padding: 30px;
-    .footer-flex{
-        @extend .row;
-        .footer-wrap{
-            @extend .col-lg-4;
-            @extend .col-md-6;
-            @extend .col-12;
-        }
-        .footer-title{
-            color: #dddddd;
-            font-weight: 300;
-            &::after{
-              content: "";
-              display: block;
-              width: 40px;
-              height: 2px;
-              background-color: #dddddd;
-              margin: 0 auto;
-              margin-top: 10px;
-          }
-        }
-        .about-us{
-          color: #cccccc;
-            .team-icons{
-                margin: 0 auto;
-                width: 100px;
-                height: 30px;
-                border-radius: 30px;
-                background-color: #e6e7e6;
-                padding: 4px 10px;
-                .icon{
-                    padding: 0 4px;
-                }
-            }
-        }
-        .recent-posts{
-            article{
-                text-align: center;
-                margin-bottom: 10px;
-            }
-            .article{
-                text-align: left;
-                line-height: 2;
-                img{
-                    width: 53px;
-                    height: 53px;
-                }
-            }
-            img, .text{
-                display: inline-block;
-                vertical-align: middle;
-                text-align: left;
-                p{
-                    margin: 0;
-                }
-            }
-        }
-        .recent-posts-link{
-            border-radius: 4px;
-            padding: 0 8px;
-        }
-        .magazine{
-            background-color: $blue;
-        }
-        .ui-design{
-            background-color: #ffba00;
-        }
-        .photography-link{
-            background-color: #089dea;
-        }
-        .book{
-            background-color: #f34d04;
-        }
-    }
-    .contacts{
-        color: #cccccc;
-        ul{
-            padding: 0;
-            list-style: none;
-        }
-    }
-    .form{
-        max-width: 320px; 
-        margin: 0 auto;
-        input, textarea{
-            width: 100%;
-            border: none ;
-            background-color: #444444;
-            display: block;
-            margin-bottom: 2px;
-        }
-        .submit{
-            background-color: #2b9b2b;
-            color: $white;
-            &:hover{
-                background-color: #dddcdc;
-                color: $black;
-                font-weight: 500;
-            }
-        }
-        ::placeholder {
-            color: #777777;
-            opacity: 1;
-        }
-    }
+.footer {
+  background-color: #333;
+  text-align: center;
+  padding: 30px;
 }
-@media screen and (max-width: 992px){
-    .footer-wrap{
-        padding-bottom: 50px;
+
+.footer-flex {
+  @extend .row;
+  .footer-wrap {
+    @extend .col-lg-4;
+    @extend .col-md-6;
+    @extend .col-12;
+  }
+  .footer-title {
+    color: #ccc;
+    &::after {
+      background-color: #ccc;
     }
+  }
+  .about-us {
+    color: #ccc;
+    .team-icons {
+      margin: 0 auto;
+      width: 100px;
+      height: 30px;
+      border-radius: 30px;
+      background-color: #e6e7e6;
+      padding: 4px 10px;
+      .icon {
+        padding: 0 4px;
+      }
+    }
+  }
+  .recent-posts {
+    color: #ccc;
+    article {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .article {
+      text-align: left;
+      line-height: 2;
+      img {
+        width: 53px;
+        height: 53px;
+      }
+    }
+    img,
+    .text {
+      display: inline-block;
+      vertical-align: middle;
+      text-align: left;
+      p {
+        margin: 0;
+      }
+    }
+  }
+  .recent-posts-link {
+    border-radius: 4px;
+    padding: 0 8px;
+  }
+  .magazine {
+    background-color: $blue;
+  }
+  .ui-design {
+    background-color: #ffba00;
+  }
+  .photography-link {
+    background-color: #089dea;
+  }
+  .book {
+    background-color: #f34d04;
+  }
+}
+
+.contacts {
+  color: #ccc;
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+}
+
+.form {
+  margin: 0 auto;
+  input,
+  textarea {
+    width: 100%;
+    border: none;
+    background-color: #444;
+    display: block;
+    margin-bottom: 2px;
+  }
+  .submit {
+    background-color: #2b9b2b;
+    color: $white;
+    &:hover {
+      background-color: #dddcdc;
+      color: $black;
+      font-weight: 500;
+    }
+  }
+  ::placeholder {
+    color: #777;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer-wrap {
+    padding-bottom: 50px;
+  }
 }

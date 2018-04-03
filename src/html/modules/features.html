@@ -1,36 +1,36 @@
 <!-- module 'Features' -->
-<div class="mod-features">
-    <div class="features-head">
-        <h2>WHAT WE DO</h2>
-        <p>Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p>
-    </div>
+<div class="mod-features container">
+    {% set content_head_class = "features-head" %}
+    {% set content_head_h2 = "WHAT WE DO" %}
+    {% set content_head_p = "Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet." %}
+    {% include "modules/content-head.html" %}
     <div class="features-group ">
         <div class="features-item ">
-            <div class="img">
+            <div class="features-img">
                 <img src="images/Forma1.png" alt="Forma1">
             </div>
             <h3>Lorem Ipsum</h3>
-            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+            <p class="features-text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
                 lorem quis bibendum auctor,</p>
-            <a href="#" class="link" title="learn more">Learn more</a>
+            <a href="#" class="btn-link" title="learn more">Learn more</a>
         </div>
         <div class="features-item ">
-            <div class="img">
-                <img src="images/Forma2.png" alt="Forma1">
+            <div class="features-img">
+                <img src="images/Forma1.png" alt="Forma1">
             </div>
             <h3>Lorem Ipsum</h3>
-            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+            <p class="features-text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
                 lorem quis bibendum auctor,</p>
-            <a href="" class="link" title="learn more">Learn more</a>
+            <a href="#" class="btn-link" title="learn more">Learn more</a>
         </div>
         <div class="features-item ">
-            <div class="img">
-                <img src="images/Forma3.png" alt="Forma1">
+            <div class="features-img">
+                <img src="images/Forma1.png" alt="Forma1">
             </div>
             <h3>Lorem Ipsum</h3>
-            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+            <p class="features-text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
                 lorem quis bibendum auctor,</p>
-            <a href="#" class="link" title="learn more">Learn more</a>
+            <a href="#" class="btn-link" title="learn more">Learn more</a>
         </div>
     </div>
 </div>

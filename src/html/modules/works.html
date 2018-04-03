@@ -1,10 +1,10 @@
 <!-- module 'Works' -->
 <div class="mod-works">
     <div class="container">
-        <div class="works-head">
-            <h2>OUR LASTEST WORK</h2>
-            <p>Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p>
-        </div>
+        {% set content_head_class = "works-head" %}
+        {% set content_head_h2 = "OUR LATEST WORK" %}
+        {% set content_head_p = "Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet." %}
+        {% include "modules/content-head.html" %}
         <div class="works-tab">
             <ul class="nav nav-pills" id="pills-tab" role="tablist">
                 <li class="nav-item is-active">
@@ -16,8 +16,7 @@
                         aria-selected="false">Design</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="pills-print-tab" data-toggle="pill" href="#pills-print" role="tab" aria-controls="pills-print" 
-                        aria-selected="false">Print</a>
+                    <a class="nav-link" id="pills-print-tab" data-toggle="pill" href="#pills-print" role="tab" aria-controls="pills-print" aria-selected="false">Print</a>
                 </li>
             </ul>
             <div class="tab-content" id="pills-tabContent">
@@ -131,7 +130,7 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="link" title="View more work">View more work
+        <a href="#" class="btn-link btn-link--works" title="View more work">View more work
             <span class="icon-arrow-right"></span>
         </a>
     </div>

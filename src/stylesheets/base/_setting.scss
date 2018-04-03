@@ -1,8 +1,9 @@
 /* font-family body */
 
-$mont: 'Montserrat', sans-serif;
-$open: 'Open Sans', sans-serif;
+$mont: "Montserrat", sans-serif;
+$open: "Open Sans", sans-serif;
 $font-family-base: $mont;
+
 /* font-family other */
 $slick: "slick";
 $icomoon: "icomoon";
@@ -24,7 +25,7 @@ $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
 $gray-600: #e1f3e1 !default;
 $gray-700: #495057 !default;
-$gray-800: #333333 !default;
+$gray-800: #333 !default;
 $gray-900: #828181 !default;
 $black:  #000 !default;
 
@@ -156,8 +157,8 @@ $h1-font-size : rem(55);
 $h2-font-size : rem(20.54);
 $h3-font-size : rem(24);
 $h4-font-size : rem(16);
-// $h5-font-size : rem(16);
-// $h6-font-size : rem(14);
+$h5-font-size : rem(14);
+$h6-font-size : rem(12);
 
 /* heading custom */
 
@@ -172,9 +173,9 @@ $headings-color:         $gray-900 !default;
 $input-btn-padding-y: rem(10);
 $input-btn-padding-x: rem(20);
 $input-btn-line-height: 1.2;
-$input-color: #777777;
-$input-bg: #777777;
-$input-btn-border-width: 0px;
+$input-color: #777;
+$input-bg: #777;
+$input-btn-border-width: 0;
 $input-border-color: #eee;
 $input-border-radius: 0;
 
