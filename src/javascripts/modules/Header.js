@@ -16,22 +16,33 @@ const Header = (($) => {
   }
 
   class Header {
-    constructor (element, config) {
+    constructor(element, config) {
       this._element = $(element)
       this._config = this._getConfig(config)
       $(window).resize(this.onResizeWindow.bind(this))
       this.scrollPinHeader()
+      this.toggler()
     }
     // public api
-    static get Default () {
+    toggler() {
+      $('*[data-toggle="collapse"]').click(function () {
+        if ($(this).attr('aria-expanded') !== 'true') {
+          $('html').addClass('is-open-toggler')
+        } else {
+          $('html').removeClass('is-open-toggler')
+        }
+      })
+    }
+
+    static get Default() {
       return Default
     }
 
-    onResizeWindow () {
+    onResizeWindow() {
       this.scrollPinHeader()
     }
 
-    settingPin () {
+    settingPin() {
       let scrollTop = $(window).scrollTop()
       if (scrollTop > this._config.scrollT) {
         this._element.addClass('pin-header')
@@ -40,17 +51,17 @@ const Header = (($) => {
       }
     }
 
-    scrollPinHeader () {
+    scrollPinHeader() {
       this.settingPin()
       $(window).scroll(() => {
         this.settingPin()
       })
     }
-    _getConfig (config) {
+    _getConfig(config) {
       config = $.extend({}, Default, config)
       return config
     }
-    static _jQueryInterface (config) {
+    static _jQueryInterface(config) {
       return this.each(function () {
         const $element = $(this)
         const _config = $.extend(

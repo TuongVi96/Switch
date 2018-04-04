@@ -17,13 +17,19 @@
     z-index: -2;
   }
 }
-
+.is-open-toggler {
+  height: 100vh;
+  overflow: hidden;
+}
 .header-navbar {
   font-size: 16px;
   padding-top: 0;
   .navbar-nav {
+    overflow: auto;
+    height: 100vh;
     color: $white;
-    display: inline;
+    display: inline-block;
+    text-align: center;
     .nav-item {
       display: inline-block;
       margin-right: 1vw;
